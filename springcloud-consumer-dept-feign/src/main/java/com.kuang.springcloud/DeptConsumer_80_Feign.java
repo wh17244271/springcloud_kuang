@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-public class FeignDeptConsumer_80 {
+public class DeptConsumer_80_Feign {
     public static void main(String[] args) {
-        SpringApplication.run(FeignDeptConsumer_80.class, args);
+        SpringApplication.run(DeptConsumer_80_Feign.class, args);
     }
 }
