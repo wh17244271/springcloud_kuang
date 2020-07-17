@@ -11,7 +11,10 @@ import java.util.List;
 
 @RestController
 public class DeptConsumerController {
-    private final static String REST_URL_PREFIX="http://localhost:8001";
+    //单个服务
+//    private final static String REST_URL_PREFIX="http://localhost:8001";
+    //负载均衡 （微服务地址，也就是服务端名字，在spring配置文件中配置）
+    private final static String REST_URL_PREFIX="http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;
