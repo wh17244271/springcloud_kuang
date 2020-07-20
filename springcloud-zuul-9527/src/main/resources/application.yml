@@ -15,3 +15,11 @@ eureka:
 
 info:
   app.name: kuang-springcloud
+
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /mydept/**
+  prefix: /kuang  #设置前缀
+  ignored-services: springcloud-provider-dept  #忽视微服务id访问，只可以自己配置的访问
+#  ignored-services: "*"  #隐藏全部
