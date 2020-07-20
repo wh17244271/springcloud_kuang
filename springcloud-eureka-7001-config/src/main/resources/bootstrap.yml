@@ -1,0 +1,9 @@
+#系统级别配置,远程配置必须 用 系统级别
+spring:
+  #连接远程仓库
+  cloud:
+    config:
+      uri: http://localhost:3344
+      name: config-eureka #需要从git上读取的名称，不需要后缀
+      profile: dev #哪个开发环境
+      label: master #哪个分支
