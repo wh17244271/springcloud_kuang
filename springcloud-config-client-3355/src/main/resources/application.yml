@@ -1,0 +1,4 @@
+# 如果本地不配置，则默认读取系统配置级别中的 config-client 中的配置
+spring:
+  application:
+    name: springcloud-config-client-3355
